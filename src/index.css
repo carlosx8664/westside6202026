@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-purple: #7c3aed; /* vibrant retro purple */
+  --color-brand-orange: #ea580c; /* vibrant neo-orange */
+  --color-brand-gold: #eab308; /* vibrant yellow-gold */
+  --color-brand-peach: #ffedd5;
+  --color-brand-dark: #0f0714;
+}
+
+/* Custom overlay or animation helpers */
+@layer base {
+  body {
+    background-color: #ea580c; /* vibrant brand orange background for the entire page container matches the theme style */
+    color: #f8fafc;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Neo-brutalist strong shadows & borders */
+.border-brutal-lg {
+  border: 4px solid #000000;
+}
+.border-brutal-md {
+  border: 3px solid #000000;
+}
+.border-brutal-sm {
+  border: 2px solid #000000;
+}
+.hover-brutal:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #000000;
+}
+.active-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px #000000;
+}
+.shadow-brutal-black {
+  box-shadow: 8px 8px 0px #000000;
+}
+.shadow-brutal-white {
+  box-shadow: 8px 8px 0px #ffffff;
+}
+.shadow-brutal-purple {
+  box-shadow: 8px 8px 0px #7c3aed;
+}
+.shadow-brutal-gold {
+  box-shadow: 8px 8px 0px #eab308;
+}
+.shadow-brutal-orange {
+  box-shadow: 8px 8px 0px #ea580c;
+}
+.shadow-brutal-sm-black {
+  box-shadow: 4px 4px 0px #000000;
+}

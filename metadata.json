@@ -1,0 +1,6 @@
+{
+  "name": "Westside Carnival",
+  "description": "Official website for the annual Westside Carnival in Takoradi, Ghana, showcasing vibrant masquerading traditions, musical performances, and cultural celebrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
